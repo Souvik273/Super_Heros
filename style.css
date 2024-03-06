@@ -1,0 +1,83 @@
+#heading{
+    margin:auto;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(230, 223, 223);
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    width: 80%;
+    border: 2px solid black;
+}
+#parent{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80%;
+    background-color: rgb(170, 139, 139);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.child{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(165, 156, 156);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.child:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+}
+#parent img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.america{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.america img{
+    width: auto;
+}
+.spiderman{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.batman{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.ironman{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.hulk{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.thor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (min-width:340px) and (max-width:768px){
+    #heading{
+        margin:auto;
+        text-align: center;
+        width: auto;
+    }
+    #parent{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,600px);
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    #parent{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,600px);
+    }
+}
+
